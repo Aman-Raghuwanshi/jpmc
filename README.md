@@ -17,23 +17,24 @@ CS561_assignment_1/
 ├── Report.pdf
 │
 └── assignment1/
-├── controllers/
-│ ├── my_e_puck_controller_dark_knight/
-│ │ └── my_e_puck_controller_dark_knight.py
-│ ├── my_e_puck_controller_follower/
-│ │ └── my_e_puck_controller_follower.py
-│ └── my_e_puck_controller_avoider/
-│ └── my_e_puck_controller_avoider.py
-├── plugins/
-│ ├── physics/
-│ ├── remote_controls/
-│ └── robot_windows/
-├── protos/
-│ ├── icons/
-│ └── construction_Lamp.proto
-├── worlds/
-│ └── world.wbt
-└── libraries/
+    ├── controllers/
+    │   ├── my_e_puck_controller_dark_knight/
+    │   │   └── my_e_puck_controller_dark_knight.py
+    │   ├── my_e_puck_controller_follower/
+    │   │   └── my_e_puck_controller_follower.py
+    │   └── my_e_puck_controller_avoider/
+    │       └── my_e_puck_controller_avoider.py
+    ├── plugins/
+    │   ├── physics/
+    │   ├── remote_controls/
+    │   └── robot_windows/
+    ├── protos/
+    │   ├── icons/
+    │   └── construction_Lamp.proto
+    ├── worlds/
+    │   └── world.wbt
+    └── libraries/
+
 
 ## Setup and Running the Simulation
 
