@@ -11,7 +11,7 @@ This project implements a Webots simulation of three E-puck robots navigating an
 
 ## File Structure
 
-'''
+```
 CS561_assignment_1/
 │
 ├── ReadMe.md
@@ -35,7 +35,7 @@ CS561_assignment_1/
     ├── worlds/
     │   └── world.wbt
     └── libraries/
-'''
+```
 
 ## Setup and Running the Simulation
 
