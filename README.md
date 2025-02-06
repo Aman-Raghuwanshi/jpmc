@@ -1,85 +1,78 @@
+# CS_Assignment2 - Prolog Programs
 
-# CS561 Artificial Intelligence - Assignment 1: Navigating E-puck Robots in a Webots Arena
-
-## Project Overview
-
-This project implements a Webots simulation of three E-puck robots navigating an arena with obstacles and light sources. The robots are:
-
-1. Torch Bearer: Moves around the arena, avoiding obstacles while emitting light.
-2. Dark Knight: Explores the arena while avoiding both obstacles and light.
-3. Follower (Bonus): Follows the Torch Bearer while avoiding obstacles.
-
-## File Structure
-
+## 📂 Folder Structure
 ```
-CS561_assignment_1/
-│
-├── ReadMe.md
-├── Report.pdf
-│
-└── assignment1/
-    ├── controllers/
-    │   ├── my_e_puck_controller_dark_knight/
-    │   │   └── my_e_puck_controller_dark_knight.py
-    │   ├── my_e_puck_controller_follower/
-    │   │   └── my_e_puck_controller_follower.py
-    │   └── my_e_puck_controller_avoider/
-    │       └── my_e_puck_controller_avoider.py
-    ├── plugins/
-    │   ├── physics/
-    │   ├── remote_controls/
-    │   └── robot_windows/
-    ├── protos/
-    │   ├── icons/
-    │   └── construction_Lamp.proto
-    ├── worlds/
-    │   └── world.wbt
-    └── libraries/
+CS_Assignment2/
+├── ques1.pl
+├── ques2.pl
+├── ques3.pl
+├── ques4.pl
+├── Final_Submission.pl
+└── ReadMe.md
 ```
 
-## Setup and Running the Simulation
+## 📋 Description
+This assignment contains Prolog programs solving different list-based problems. Each question is implemented in a separate `.pl` file, with all solutions consolidated in `Final_Submission.pl`.
 
-1. Ensure you have Webots installed on your system.
-2. Open the Webots software.
-3. Load the world file located at `assignment1/worlds/world.wbt`.
-4. The simulation should start automatically. If not, use the Webots interface to start the simulation.
+## 🚀 Functionality Overview
 
-## Robot Controllers
+### 1️⃣ **ques1.pl - Sum and Add to Each Element**
+- **Task:** Finds the sum of all numbers in a list and adds this sum to each element.
+- **Example:**
+  ```prolog
+  ?- add_sum_to_list([1, 2, 3], Result).
+  Result = [9, 10, 11].  % Sum is 6, added to each element
+  ```
 
-### Torch Bearer (Avoider)
-- File: `my_e_puck_controller_avoider.py`
-- Behavior: Moves around the arena avoiding obstacles using proximity sensors.
+### 2️⃣ **ques2.pl - Move Last Element to First**
+- **Task:** Deletes the last element of a list and inserts it at the beginning.
+- **Example:**
+  ```prolog
+  ?- delete_last_insert_first([1, 2, 3, 4], Result).
+  Result = [4, 1, 2, 3].
+  ```
 
-### Dark Knight
-- File: `my_e_puck_controller_dark_knight.py`
-- Behavior: Explores the arena while avoiding both obstacles and light sources.
+### 3️⃣ **ques3.pl - Frequency of Elements**
+- **Task:** Finds the frequency of each number in the list.
+- **Example:**
+  ```prolog
+  ?- count_frequency([1, 10, 12, 10, 1, 20, 3], Result).
+  Result = [(1, 2), (10, 2), (12, 1), (20, 1), (3, 1)].
+  ```
 
-### Follower (Bonus)
-- File: `my_e_puck_controller_follower.py`
-- Behavior: Follows the Torch Bearer while avoiding obstacles.
+### 4️⃣ **ques4.pl - Remove Duplicates**
+- **Task:** Removes duplicate elements from a list.
+- **Example:**
+  ```prolog
+  ?- remove_duplicates([10, 30, 12, 12, 3, 1, 2, 12, 14, 15, 2], Result).
+  Result = [10, 30, 12, 3, 1, 2, 14, 15].
+  ```
 
-## Key Features
+### 📦 **Final_Submission.pl**
+- Consolidates all the above codes for ease of submission.
 
-- Obstacle avoidance using proximity sensors
-- Light detection and avoidance (Dark Knight)
-- Light following (Follower)
-- Smooth navigation and turning behaviors
+## ⚙️ How to Run
+1. **Open SWI-Prolog:**
+   - Install SWI-Prolog if not already installed.
+   - Open the terminal/command prompt.
 
-## Additional Notes
+2. **Load the File:**
+   ```bash
+   swipl
+   ?- [Final_Submission].
+   ```
 
-- The simulation uses a checkered arena with randomly placed wooden box obstacles.
-- The background light is disabled to create a dark environment.
-- Robot speeds are set lower than maximum for smoother movement.
-- Detailed explanations and observations can be found in the accompanying `Report.pdf`.
+3. **Execute Queries:**
+   - Use the queries mentioned in each section to test the functionalities.
 
-## Troubleshooting
+4. **Exit Prolog:**
+   ```prolog
+   ?- halt.
+   ```
 
-If you encounter any issues running the simulation:
-1. Ensure all controller files are in their respective folders within the `controllers` directory.
-2. Check that the world file (`world.wbt`) is properly configured with the correct robot models and controllers.
-3. Verify that all required Webots modules and dependencies are installed.
+## ✅ Dependencies
+- **SWI-Prolog** (or any compatible Prolog interpreter).
 
-For any further queries, please contact the CS561 TAs.
+---
+For any queries, feel free to reach out to r.aman@iitg.ac.in
 
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/52192604/cdfeca3a-9808-4d1b-8128-638e8c0e1a41/paste.txt
