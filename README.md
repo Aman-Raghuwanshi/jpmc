@@ -35,7 +35,6 @@ CS561_assignment_1/
     │   └── world.wbt
     └── libraries/
 
-
 ## Setup and Running the Simulation
 
 1. Ensure you have Webots installed on your system.
