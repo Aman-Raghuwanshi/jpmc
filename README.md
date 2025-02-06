@@ -1,6 +1,4 @@
-Here's a README.md file for your CS561 Artificial Intelligence Assignment 1 project:
 
-```markdown
 # CS561 Artificial Intelligence - Assignment 1: Navigating E-puck Robots in a Webots Arena
 
 ## Project Overview
@@ -12,7 +10,6 @@ This project implements a Webots simulation of three E-puck robots navigating an
 3. Follower (Bonus): Follows the Torch Bearer while avoiding obstacles.
 
 ## File Structure
-```
 
 CS561_assignment_1/
 │
@@ -37,8 +34,6 @@ CS561_assignment_1/
 ├── worlds/
 │ └── world.wbt
 └── libraries/
-
-```
 
 ## Setup and Running the Simulation
 
@@ -83,7 +78,6 @@ If you encounter any issues running the simulation:
 3. Verify that all required Webots modules and dependencies are installed.
 
 For any further queries, please contact the CS561 TAs.
-```
 
 Citations:
 [1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/52192604/cdfeca3a-9808-4d1b-8128-638e8c0e1a41/paste.txt
